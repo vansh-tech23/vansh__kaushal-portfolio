@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="matrixBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#021a0f" />
+      <stop offset="50%" stop-color="#052e16" />
+      <stop offset="100%" stop-color="#01140b" />
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#15803d" stop-opacity="0.2" />
+    </linearGradient>
+    <pattern id="matrixCode" width="40" height="200" patternUnits="userSpaceOnUse">
+      <text x="10" y="20" fill="#4ade80" font-family="monospace" font-size="12" opacity="0.8">1 0 1</text>
+      <text x="10" y="40" fill="#22c55e" font-family="monospace" font-size="12" opacity="0.6">def py:</text>
+      <text x="10" y="60" fill="#86efac" font-family="monospace" font-size="12" opacity="0.9">0 1 1</text>
+      <text x="10" y="80" fill="#16a34a" font-family="monospace" font-size="12" opacity="0.5">data[]</text>
+      <text x="10" y="100" fill="#4ade80" font-family="monospace" font-size="12" opacity="0.7">1 1 0</text>
+      <text x="10" y="120" fill="#bbf7d0" font-family="monospace" font-size="12" opacity="0.95">tree()</text>
+      <text x="10" y="140" fill="#22c55e" font-family="monospace" font-size="12" opacity="0.6">0 0 1</text>
+      <text x="10" y="160" fill="#4ade80" font-family="monospace" font-size="12" opacity="0.85">O(log)</text>
+      <text x="10" y="180" fill="#15803d" font-family="monospace" font-size="12" opacity="0.4">1 0 0</text>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#matrixBg)" />
+
+  <!-- Matrix Rain Columns -->
+  <rect width="400" height="200" fill="url(#matrixCode)" />
+  
+  <!-- Glowing Overlay -->
+  <rect x="0" y="0" width="400" height="200" fill="url(#greenGlow)" opacity="0.35" />
+  
+  <!-- Python Code Nodes -->
+  <circle cx="80" cy="100" r="16" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="80" y="105" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">Py</text>
+
+  <circle cx="160" cy="65" r="12" fill="#14532d" stroke="#22c55e" stroke-width="1.5"/>
+  <circle cx="160" cy="135" r="12" fill="#14532d" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="96" y1="95" x2="148" y2="70" stroke="#4ade80" stroke-width="2" stroke-dasharray="3 3"/>
+  <line x1="96" y1="105" x2="148" y2="130" stroke="#4ade80" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <circle cx="230" cy="50" r="10" fill="#14532d" stroke="#86efac" stroke-width="1.5"/>
+  <circle cx="230" cy="80" r="10" fill="#14532d" stroke="#86efac" stroke-width="1.5"/>
+  <line x1="172" y1="62" x2="220" y2="52" stroke="#86efac" stroke-width="1.5"/>
+  <line x1="172" y1="68" x2="220" y2="78" stroke="#86efac" stroke-width="1.5"/>
+  
+  <text x="320" y="160" fill="#86efac" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold" opacity="0.85">&lt;DSA_Py/&gt;</text>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="360" rx="16" fill="url(#bgGrad1)" stroke="#1e293b" stroke-width="1.5"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="#1e293b" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.6">
+    <line x1="60" y1="40" x2="60" y2="300" />
+    <line x1="160" y1="40" x2="160" y2="300" />
+    <line x1="260" y1="40" x2="260" y2="300" />
+    <line x1="360" y1="40" x2="360" y2="300" />
+    <line x1="460" y1="40" x2="460" y2="300" />
+    <line x1="540" y1="40" x2="540" y2="300" />
+    
+    <line x1="60" y1="90" x2="540" y2="90" />
+    <line x1="60" y1="150" x2="540" y2="150" />
+    <line x1="60" y1="210" x2="540" y2="210" />
+    <line x1="60" y1="270" x2="540" y2="270" />
+  </g>
+
+  <!-- Card Header / Terminal Bar -->
+  <rect x="20" y="20" width="560" height="40" rx="8" fill="#0f172a" opacity="0.8"/>
+  <circle cx="45" cy="40" r="5" fill="#ef4444" />
+  <circle cx="62" cy="40" r="5" fill="#eab308" />
+  <circle cx="79" cy="40" r="5" fill="#22c55e" />
+  <text x="110" y="44" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12">model_regression_eval.py — [Scikit-Learn]</text>
+
+  <!-- Metric Badges -->
+  <rect x="390" y="27" width="80" height="24" rx="12" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-width="1"/>
+  <text x="430" y="43" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">R²: 0.94</text>
+
+  <rect x="480" y="27" width="85" height="24" rx="12" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1"/>
+  <text x="522" y="43" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">MAE: 1.28</text>
+
+  <!-- Chart Area Gradient Fill -->
+  <path d="M 80 270 L 140 230 L 210 240 L 280 180 L 350 160 L 420 110 L 490 100 L 530 80 L 530 270 Z" fill="url(#accentGlow)" />
+  
+  <!-- Regression Curve / Trendline -->
+  <path d="M 80 270 L 140 230 L 210 240 L 280 180 L 350 160 L 420 110 L 490 100 L 530 80" fill="none" stroke="url(#cyanLine)" stroke-width="3.5" filter="url(#glow1)"/>
+
+  <!-- Secondary Confidence Interval Line -->
+  <path d="M 80 280 Q 280 200 530 110" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.7"/>
+
+  <!-- Data Point Nodes -->
+  <circle cx="80" cy="270" r="4.5" fill="#38bdf8" stroke="#0b1329" stroke-width="2" />
+  <circle cx="140" cy="230" r="4.5" fill="#38bdf8" stroke="#0b1329" stroke-width="2" />
+  <circle cx="210" cy="240" r="4.5" fill="#38bdf8" stroke="#0b1329" stroke-width="2" />
+  <circle cx="280" cy="180" r="4.5" fill="#38bdf8" stroke="#0b1329" stroke-width="2" />
+  <circle cx="350" cy="160" r="5" fill="#818cf8" stroke="#0b1329" stroke-width="2" filter="url(#glow1)"/>
+  <circle cx="420" cy="110" r="5" fill="#818cf8" stroke="#0b1329" stroke-width="2" filter="url(#glow1)"/>
+  <circle cx="490" cy="100" r="5" fill="#38bdf8" stroke="#0b1329" stroke-width="2" />
+  <circle cx="530" cy="80" r="6" fill="#34d399" stroke="#0b1329" stroke-width="2" filter="url(#glow1)"/>
+
+  <!-- Target Prediction Callout Card -->
+  <g transform="translate(320, 190)">
+    <rect width="210" height="95" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" opacity="0.95" filter="url(#glow1)"/>
+    <text x="16" y="26" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">PREDICTED GRADE SCORE</text>
+    <text x="16" y="56" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="24" font-weight="700">92.8%</text>
+    <text x="120" y="54" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="12">▲ +8.4%</text>
+    <rect x="16" y="68" width="178" height="6" rx="3" fill="#1e293b"/>
+    <rect x="16" y="68" width="165" height="6" rx="3" fill="url(#cyanLine)"/>
+  </g>
+
+  <!-- Feature Weight Cards Left Bottom -->
+  <g transform="translate(60, 200)">
+    <rect width="130" height="85" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" opacity="0.9"/>
+    <text x="12" y="24" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">FEATURES</text>
+    <text x="12" y="44" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="11">Study Time: 0.42</text>
+    <text x="12" y="62" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="11">Attendance: 0.38</text>
+    <text x="12" y="78" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">Scikit-Learn LinearReg</text>
+  </g>
+</svg>

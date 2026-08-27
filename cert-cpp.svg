@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ideBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b" />
+      <stop offset="100%" stop-color="#1c2541" />
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark IDE / Laptop Screen Workspace -->
+  <rect width="400" height="200" fill="url(#ideBg)" />
+
+  <!-- Laptop Outline Perspective -->
+  <g transform="perspective(500px) rotateY(-8deg) translate(20, 10)">
+    <!-- Code Editor Window -->
+    <rect x="20" y="15" width="340" height="170" rx="8" fill="#0f172a" stroke="rgba(99, 102, 241, 0.4)" stroke-width="1.5" />
+    
+    <!-- Editor Header Dots -->
+    <circle cx="35" cy="27" r="4" fill="#ef4444" />
+    <circle cx="47" cy="27" r="4" fill="#eab308" />
+    <circle cx="59" cy="27" r="4" fill="#22c55e" />
+    <text x="80" y="30" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">main.cpp — C++ OOP</text>
+
+    <!-- Syntax Highlighted Lines -->
+    <text x="35" y="55" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">#include &lt;iostream&gt;</text>
+    <text x="35" y="70" fill="#818cf8" font-family="'JetBrains Mono', monospace" font-size="10">class <tspan fill="#f59e0b">Shape</tspan> {</text>
+    <text x="45" y="85" fill="#c084fc" font-family="'JetBrains Mono', monospace" font-size="10">public:</text>
+    <text x="55" y="100" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">virtual void <tspan fill="#34d399">draw</tspan>() = 0;</text>
+    <text x="35" y="115" fill="#818cf8" font-family="'JetBrains Mono', monospace" font-size="10">};</text>
+    
+    <text x="35" y="135" fill="#818cf8" font-family="'JetBrains Mono', monospace" font-size="10">class <tspan fill="#f59e0b">Circle</tspan> : public <tspan fill="#f59e0b">Shape</tspan> {</text>
+    <text x="55" y="150" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">void <tspan fill="#34d399">draw</tspan>() override { ... }</text>
+    <text x="35" y="165" fill="#818cf8" font-family="'JetBrains Mono', monospace" font-size="10">};</text>
+
+    <!-- Ambient glowing cursor -->
+    <rect x="235" y="142" width="2" height="11" fill="#60a5fa" />
+  </g>
+
+  <!-- Bottom Glow -->
+  <circle cx="360" cy="180" r="80" fill="#6366f1" opacity="0.15" />
+</svg>
