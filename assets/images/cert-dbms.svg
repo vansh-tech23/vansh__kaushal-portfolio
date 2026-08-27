@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dbmsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4ff" />
+      <stop offset="50%" stop-color="#fed7aa" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <linearGradient id="folderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="darkPerson" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <pattern id="gridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Warm Clean Theme -->
+  <rect width="400" height="200" fill="#f5ebe0" />
+  
+  <!-- Subtle ambient shapes -->
+  <circle cx="340" cy="50" r="100" fill="#ffedd5" opacity="0.6" />
+  
+  <!-- Person Silhouette in Black/Navy Sweater holding Orange Grid Folder -->
+  <path d="M 120 200 L 130 110 Q 150 70 200 70 Q 250 70 270 110 L 280 200 Z" fill="url(#darkPerson)" />
+  <!-- Neck / Collar -->
+  <path d="M 180 70 Q 200 95 220 70 Q 210 35 190 35 Z" fill="#e2c4b5" />
+
+  <!-- Diagonal Orange Grid Document Folder -->
+  <g transform="rotate(-25 210 140)">
+    <rect x="140" y="80" width="130" height="150" rx="8" fill="url(#folderGrad)" stroke="#ffffff" stroke-width="2"/>
+    <rect x="140" y="80" width="130" height="150" rx="8" fill="url(#gridPattern)" />
+    
+    <!-- Table Schema Graphics inside Folder -->
+    <rect x="155" y="100" width="100" height="22" rx="4" fill="#ffffff" fill-opacity="0.9"/>
+    <text x="165" y="115" fill="#c2410c" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">SQL &middot; DBMS</text>
+
+    <!-- Cylinder / Database disk icon -->
+    <path d="M 160 145 C 160 138 180 138 180 145 L 180 170 C 180 177 160 177 160 170 Z" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="1.5"/>
+    <ellipse cx="170" cy="145" rx="10" ry="4" fill="#ffffff" fill-opacity="0.8"/>
+    <ellipse cx="170" cy="157" rx="10" ry="3" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+    <ellipse cx="170" cy="170" rx="10" ry="3" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+  </g>
+</svg>

@@ -1,0 +1,79 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070d1e" />
+      <stop offset="100%" stop-color="#0b152d" />
+    </linearGradient>
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="purplePink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="75" x2="800" y2="75" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="225" x2="800" y2="225" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="375" x2="800" y2="375" />
+    <line x1="160" y1="0" x2="160" y2="450" />
+    <line x1="320" y1="0" x2="320" y2="450" />
+    <line x1="480" y1="0" x2="480" y2="450" />
+    <line x1="640" y1="0" x2="640" y2="450" />
+  </g>
+  <circle cx="200" cy="180" r="140" fill="#38bdf8" opacity="0.12" filter="url(#glow)" />
+  <circle cx="600" cy="270" r="160" fill="#818cf8" opacity="0.1" filter="url(#glow)" />
+  <rect x="70" y="45" width="660" height="360" rx="16" fill="#0f172a" fill-opacity="0.85" stroke="url(#cyanBlue)" stroke-width="1.5" />
+  <rect x="70" y="45" width="660" height="42" rx="16" fill="#1e293b" fill-opacity="0.9" />
+  <rect x="70" y="70" width="660" height="17" fill="#1e293b" fill-opacity="0.9" />
+  <circle cx="98" cy="66" r="6" fill="#ef4444" />
+  <circle cx="118" cy="66" r="6" fill="#f59e0b" />
+  <circle cx="138" cy="66" r="6" fill="#10b981" />
+  <text x="400" y="71" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#94a3b8" text-anchor="middle">StudentManagementSystem.cpp — Object-Oriented Architecture</text>
+  <rect x="95" y="105" width="310" height="275" rx="10" fill="#050811" fill-opacity="0.9" stroke="rgba(56,189,248,0.2)" stroke-width="1" />
+  <text x="115" y="135" font-family="'JetBrains Mono', monospace" font-size="12" fill="#c084fc">class <tspan fill="#38bdf8">Student</tspan> {</text>
+  <text x="115" y="160" font-family="'JetBrains Mono', monospace" font-size="12" fill="#64748b">private:</text>
+  <text x="135" y="185" font-family="'JetBrains Mono', monospace" font-size="12" fill="#e2e8f0">  int id; string name;</text>
+  <text x="135" y="210" font-family="'JetBrains Mono', monospace" font-size="12" fill="#e2e8f0">  vector&lt;Course&gt; courses;</text>
+  <text x="115" y="235" font-family="'JetBrains Mono', monospace" font-size="12" fill="#64748b">public:</text>
+  <text x="135" y="260" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8">  void <tspan fill="#818cf8">addRecord</tspan>();</text>
+  <text x="135" y="285" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8">  void <tspan fill="#818cf8">searchStudent</tspan>(int);</text>
+  <text x="135" y="310" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8">  void <tspan fill="#818cf8">saveToFile</tspan>();</text>
+  <text x="115" y="335" font-family="'JetBrains Mono', monospace" font-size="12" fill="#c084fc">};</text>
+  <text x="115" y="360" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10b981">// Binary Search &amp; File Persistence</text>
+  <rect x="425" y="105" width="280" height="125" rx="10" fill="#0b1120" fill-opacity="0.9" stroke="rgba(129,140,248,0.25)" stroke-width="1" />
+  <text x="445" y="132" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#f8fafc">Record Management Matrix</text>
+  <rect x="445" y="145" width="240" height="22" rx="4" fill="#1e293b" />
+  <text x="455" y="160" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">ID: 1042</text>
+  <text x="525" y="160" font-family="'JetBrains Mono', monospace" font-size="10" fill="#e2e8f0">CSE Dept</text>
+  <text x="635" y="160" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981">ENROLLED</text>
+  <rect x="445" y="173" width="240" height="22" rx="4" fill="#1e293b" />
+  <text x="455" y="188" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">ID: 1043</text>
+  <text x="525" y="188" font-family="'JetBrains Mono', monospace" font-size="10" fill="#e2e8f0">CSE Dept</text>
+  <text x="635" y="188" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981">ENROLLED</text>
+  <rect x="445" y="201" width="240" height="22" rx="4" fill="#1e293b" />
+  <text x="455" y="216" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">ID: 1044</text>
+  <text x="525" y="216" font-family="'JetBrains Mono', monospace" font-size="10" fill="#e2e8f0">CSE Dept</text>
+  <text x="635" y="216" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">ACTIVE</text>
+  <rect x="425" y="245" width="280" height="135" rx="10" fill="#0b1120" fill-opacity="0.9" stroke="rgba(56,189,248,0.25)" stroke-width="1" />
+  <circle cx="475" cy="312" r="22" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="475" y="316" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#38bdf8" text-anchor="middle">CLI</text>
+  <line x1="497" y1="312" x2="543" y2="312" stroke="#818cf8" stroke-width="2" stroke-dasharray="4 2" />
+  <circle cx="565" cy="312" r="22" fill="#1e293b" stroke="#818cf8" stroke-width="1.5" />
+  <text x="565" y="316" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#818cf8" text-anchor="middle">OOP</text>
+  <line x1="587" y1="312" x2="633" y2="312" stroke="#10b981" stroke-width="2" stroke-dasharray="4 2" />
+  <circle cx="655" cy="312" r="22" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+  <text x="655" y="316" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#10b981" text-anchor="middle">I/O</text>
+  <text x="565" y="272" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">C++ Modular OOP Pipeline</text>
+</svg>
